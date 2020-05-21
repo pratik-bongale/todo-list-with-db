@@ -1,4 +1,4 @@
-# To-do List App - With database
+# To-do List App - with database
 Create a to-do lists for any of your outstanding/forgettable tasks.
 
 ## Getting Started
@@ -8,7 +8,7 @@ Create a to-do lists for any of your outstanding/forgettable tasks.
 ### Prerequisites
 - Node, npm
 - MongoDB Atlas account(free account works)
-  - Visit [Getting started guide](https://docs.atlas.mongodb.com/getting-started/) for steps of setting up your free cluster in the cloud.
+  - Visit [getting started guide](https://docs.atlas.mongodb.com/getting-started/) for steps of setting up your free cluster in the cloud.
 
 ### Installing
 Clone this repository. 
