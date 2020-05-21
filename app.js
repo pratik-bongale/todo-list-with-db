@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
 const MongoClient = require('mongodb');
+require("dotenv").config();
 
 const app = express();
 
@@ -21,8 +22,9 @@ app.use(express.static("public"));
 //   useUnifiedTopology: true
 // });
 
-// connecting to db Server
-mongoose.connect("mongodb+srv://admin-pratik:Test123@cluster0-in9xt.mongodb.net/todolistDB", {
+// connecting to db Server in cloud cluster
+const connection_string = process.env.MONGODB_CONN;
+mongoose.connect(connection_string, {
   useNewUrlParser : true,
   useUnifiedTopology: true
 });
